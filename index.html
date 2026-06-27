@@ -423,9 +423,35 @@
     footer strong { color: var(--text); }
 
     @media (max-width: 600px) {
-      nav { padding: 1rem; }
+      nav { padding: .75rem 1rem; }
       .nav-links a:not(.btn-nav) { display: none; }
-      .hero { padding: 3rem 1rem 2rem; }
+      .logo { font-size: 1.1rem; }
+      .btn-nav { padding: .4rem .9rem; font-size: .8rem; }
+      .hero { padding: 2.5rem 1rem 1.5rem; }
+      .hero h1 { font-size: 1.7rem; }
+      .hero p { font-size: .95rem; }
+      .badge { font-size: .7rem; }
+      .hero-badges { gap: .4rem; }
+      .subject-pill { font-size: .75rem; padding: .35rem .8rem; }
+      .chat-wrapper { padding: 0 .75rem; margin-bottom: 2rem; }
+      .chat-box { border-radius: 16px; }
+      .chat-header { padding: .75rem 1rem; }
+      .chat-header-info h3 { font-size: .85rem; }
+      .chat-header-info p { font-size: .7rem; }
+      .chat-messages { min-height: 220px; max-height: 340px; padding: 1rem; }
+      .msg-bubble { font-size: .85rem; padding: .65rem .85rem; }
+      .msg-avatar { width: 28px; height: 28px; font-size: .85rem; }
+      .chat-input-area { padding: .75rem 1rem; gap: .5rem; }
+      .chat-input-area textarea { font-size: .85rem; padding: .65rem .85rem; }
+      .send-btn { width: 42px; height: 42px; border-radius: 10px; }
+      .section { padding: 2.5rem 1rem; }
+      .section-title { font-size: 1.4rem; }
+      .steps { grid-template-columns: 1fr; gap: 1rem; }
+      .step { padding: 1.25rem; }
+      .pricing-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .plan { padding: 1.5rem; }
+      .plan-price { font-size: 1.8rem; }
+      footer { font-size: .75rem; padding: 1.5rem 1rem; }
     }
   </style>
 </head>
@@ -541,7 +567,7 @@
         <li>Priorité de réponse</li>
         <li>Historique des questions</li>
       </ul>
-      <button class="plan-btn primary" id="checkout-btn" onclick="startCheckout()">Essayer 7 jours gratuits</button>
+      <button class="plan-btn primary" id="checkout-btn" onclick="window.location.href='https://buy.stripe.com/8x2bJ1c8A5tS0kwePY9EI00'">Essayer 7 jours gratuits</button>
     </div>
   </div>
 </section>
