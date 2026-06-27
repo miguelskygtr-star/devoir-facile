@@ -613,14 +613,14 @@
     showTyping();
 
     try {
-      const res = await fetch('https://api.together.xyz/v1/chat/completions', {
+      const res = await fetch('https://api.mistral.ai/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer key_CcTdphVPHExE1ySjxZKTD'
+          'Authorization': 'Bearer veYULyFoSIseXNTvaxgAXymgUR4tKQgd'
         },
         body: JSON.stringify({
-          model: 'meta-llama/Llama-3-70b-chat-hf',
+          model: 'mistral-small-latest',
           max_tokens: 1000,
           messages: [
             {
